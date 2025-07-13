@@ -80,7 +80,7 @@ async def main():
         fqdn = domain
     print_info(f"Full domain to configure: {fqdn}")
     resource_group = prompt_input("Enter resource group name", "win10dev")
-    pc_name = 'smtp'#''.join(random.choices(string.ascii_lowercase, k=6))
+    pc_name = 'search'#''.join(random.choices(string.ascii_lowercase, k=6))
     vm_name = prompt_input("Enter VM name", pc_name)
     location = prompt_input("Enter Azure region", "uksouth")
     vm_size = prompt_input("Enter VM size", "Standard_B2s")
