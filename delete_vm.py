@@ -123,8 +123,8 @@ if __name__ == "__main__":
     if not vm_name.strip():
         print_error("VM name cannot be empty. Exiting.")
         sys.exit(1)
-    resource_group = prompt_input("Enter the resource group name","win10dev")
-    domain = prompt_input("Enter the DNS zone domain name (e.g., example.com)","win10dev.xyz")
+    resource_group = prompt_input("Enter the resource group name","searchgroup")
+    domain = prompt_input("Enter the DNS zone domain name (e.g., example.com)","example.com")
     a_records_input = vm_name  # single record name string, so split works
     a_records = [r.strip() for r in a_records_input.split(",")]
 
